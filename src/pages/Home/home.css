@@ -135,7 +135,7 @@ section.module.parallax{
 }
 
 section.module.parallax-1{
-    background-image: url(../../img/background-dog.jpg);
+    background-image: url(../../img/background-dog.jpg) !important;
     background-position: top;
 }
 
