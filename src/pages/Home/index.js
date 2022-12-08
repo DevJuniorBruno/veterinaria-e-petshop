@@ -1,20 +1,22 @@
 import './home.css';
 import { Link } from 'react-router-dom';
-import Caminhao from '../../img/caminhao.png'
-import Localizacao from '../../img/localizacao.png'
+import Caminhao from '../../img/caminhao.png';
+import Localizacao from '../../img/localizacao.png';
+import Medicamento from '../../img/medicamentos.jpeg';
+import Telefone from '../../img/telefone.jpeg';
 
 function Home() {
     return(
-        <div className='wraper'>
+        <div>
             <main>
                 <section className='module parallax parallax-1'>  
-                    <h1 className='saibamais'>Clínica Veterinária Simplesvet </h1>
+                    <h1 id='saibamais'>Clínica Veterinária Simplesvet </h1>
                     <div className='divButton'>
-                        <Link className='fourth' to='clinica'>Saiba mais</Link>
+                        <Link className='button' to='clinica'>Saiba mais</Link>
                     </div>
                 </section>
 
-                <section className='module content'>
+                <section className='module_content'>
                     <div className='icones-links'>
                     <Link to="clinica" >
                         <img className='caminhao' to='clinica' src={ Caminhao } alt="caminhao-link" />
@@ -24,22 +26,33 @@ function Home() {
                     <div className='icones-links'>
                     <Link to="localizacao" >
                         <img className='localizacao' to='localizacao' src={ Localizacao } alt="caminhao-link" />
-                        <p>Táxi Dog</p>
+                        <p>Localização</p>
                     </Link> 
                     </div>
-                    <div className='icones-links'></div>
-                    <div className='icones-links'></div>
+                    <div className='icones-links'>
+                        <Link to='medicamento'>
+                            <img className='medicamento' src= { Medicamento} alt='medicamentos-link'  />
+                            <p>Medicamentos</p>
+                        </Link>
+                    </div>
+                    <div className='icones-links'>
+                        <Link to='telefone'> 
+                        <img className='telefone' src= {Telefone} alt="telefone-link" />
+                        <p>Telefone</p>
+                        </Link>
+                    </div>
                 </section>
 
                 <section className='module info'>
                    <div className='container-infos'>
-                    <h2>Qalquer Texto Aqui</h2>
+                    <h2>Entre em contato</h2>
                         <p>
-                            lorem imsasdasdasda ddasdsad sdasdadasdas asdmoackmascka scasmcsakmcsa aslckmaslsak
+                            Teremos o maior prazer em lhe atender.
                         </p>
-                        <p>
-                            lorem imsasdasdasda ddasdsad sdasdadasdas asdmoackmascka scasmcsakmcsa aslckmaslsak
-                        </p>
+                        <div className='divButton'>
+                            <Link className='button' to='clinica'>Contato</Link>
+                        </div>
+
                     </div>
                    </section>
 

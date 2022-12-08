@@ -1,0 +1,101 @@
+.header_banhoetosa{
+    background-image: url(../../img/background-dog.jpg);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px;
+    height: 300px;
+    color: #fff;
+    justify-content: center;
+    padding-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.container_content{
+    width: 100%;
+}
+.content_introduction{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+}
+.first_introduction{
+    width: 25%;
+}
+.first_introduction h1{
+    padding: 20px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.first_introduction p{
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.second_introduction{
+    width: 25%;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.last_introduction{
+    width: 20%;
+    padding: 20px;
+}
+.last_introduction p{
+    padding: 5px;
+}
+.dogs_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.img_dogcat{
+    width: 90%;
+}
+
+.upshot{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.upshot_child{
+    margin-top: 30px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.upshot_child p{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media(max-width:980px) {
+    .header_banhoetosa{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .content_introduction{
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 50px;
+    }
+    .first_introduction{
+        width: 100%;
+    }
+    .second_introduction{
+        margin-top: 35px;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+    }
+    .second_introduction p{
+        margin-left: 24px;
+    }
+    .last_introduction{
+        width: 100%;
+    }
+   
+}

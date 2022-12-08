@@ -6,13 +6,8 @@ body{
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
-
-h1,h2,h3,h4,h5{
-    font-weight: bold;
-    color: rgb(28, 25, 25);
-}
-.saibamais{
-    font-size: 46px;
+#saibamais{
+    font-size: 150%;
     color: #fff;;
     font-weight:300;
 }
@@ -27,7 +22,7 @@ h1,h2,h3,h4,h5{
    border:#fff 2px solid;
 
 }
-.fourth{
+.button{
     width: 100% !important;
     height: 100%;
     display: flex;
@@ -37,32 +32,48 @@ h1,h2,h3,h4,h5{
     border-color: #f1c40f;
     border-radius: 10px;
     color: #fff;
-    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(45deg, #C72D21 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #C72D21 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
     transition: background 500ms ease-out;
 
 }
-.fourth:hover {
+.button:hover {
 background-position: 0;
 }
-
-.wrapper{
-    width: 100%;
-    margin: 0 auto;
-    background-color: aqua;
-}
-
 main{
     display: block;
     background-color: #fff;
 }
 
 .caminhao{
-    width: 100px;
+    width: 140px;
     border-radius: 100px;
+}
+.localizacao{
+    border-radius: 100px;
+    width: 140px;
+}
+.medicamento{
+    border-radius: 100px;
+    width: 140px;
+}
+.telefone{
+    border-radius: 100px;
+    width:140px;
+}
+.icones-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icones-links p{
+    display: flex;
+    justify-content: center;
 }
 
 .container{
@@ -70,18 +81,21 @@ main{
     max-width: 760px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #f1c40f;
 }
 .container-infos{
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
 }
 section.module.info{
-    padding: 40px 0;
-    background: rgb(19, 146, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background:#006F45;
 }
 
 section.module p {
@@ -94,11 +108,16 @@ section.module:last-child{
     margin-bottom: 0;
 }
 
-section.module.content{
+section.module_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
     padding: 40px 0;
-    background: #006F45;
+    background:#8EC549 ;
     height: 350px;
 }
+
 
 section.module.parallax{
     display: flex;
@@ -112,8 +131,57 @@ section.module.parallax{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    animation: alternate;
 }
 
 section.module.parallax-1{
-    background-image: url(../../img/dog-toys.jpg);
+    background-image: url(../../img/background-dog.jpg);
+    background-position: top;
+}
+
+@media (max-width:840px) {
+    section.module_content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;    
+    }
+    section.module_content p{
+        display: flex;
+        justify-content:center;
+    }
+    .icones-links{
+        padding: 20px;
+    }
+}
+@media (max-width:650px) {
+    section.module_content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;    
+    }
+    section.module_content p{
+        display: flex;
+        justify-content:center;
+    }
+    .icones-links{
+        
+        padding: 20px;
+    }
+
+    #saibamais {
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+    .container-infos{
+        font-size: 15px;
+    }
+    .container-infos p{
+        font-size:15px;
+        display: flex;
+        justify-content: center;
+    }
 }
