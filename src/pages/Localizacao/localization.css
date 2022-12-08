@@ -1,0 +1,8 @@
+.container_content_localization{
+    padding-top:80px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-around;
+}
