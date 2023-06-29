@@ -30,13 +30,13 @@ function Home() {
                     </Link> 
                     </div>
                     <div className='icones-links'>
-                        <Link to='medicamento'>
+                        <Link to='servicos'>
                             <img className='medicamento' src= { Medicamento} alt='medicamentos-link'  />
                             <p>Medicamentos</p>
                         </Link>
                     </div>
                     <div className='icones-links'>
-                        <Link to='telefone'> 
+                        <Link to='contato'> 
                         <img className='telefone' src= {Telefone} alt="telefone-link" />
                         <p>Telefone</p>
                         </Link>

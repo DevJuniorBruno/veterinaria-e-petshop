@@ -1,13 +1,8 @@
 import "./maps.css";
 import React from "react";
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-
 
 const MapPage = ()=> {
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyCoh0wF88nftb0ZLdExsG_irl_B-3c_avM"
-  })
+ 
 
   const position = {
     lat:-23.583652, 
@@ -25,22 +20,11 @@ const MapPage = ()=> {
       </div>
        
        <div className="map">
-      {isLoaded ? (
-      <GoogleMap
-        mapContainerStyle={{width: "100%", height:"100%"}}
-        center={position}
-        zoom={15}
+       <iframe
+        title="Google Maps"
+        src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!0d0!0d0!0d0!0d0!0d0!0d0!0d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58306b5b6183%3A0x912f580ebf1f4f3a!2sPra%C3%A7a%20Do%20Monumento%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1sen!2sbr!4v1624070742745!5m2!1sen!2sbr!q=${position.lat},${position.lng}`}
       >
-        <Marker position={position} options={{
-          label:{
-            text: "SIMPLESVET",
-            className:"map_label"
-          }
-        }} />
-      </GoogleMap>
-  ) : (
-  <></>
-  )}
+      </iframe>
     </div>
     </div>
    

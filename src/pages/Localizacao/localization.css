@@ -1,4 +1,4 @@
-.container_content_localization{
+.container_Content_Contact{
     padding-top:80px;
     display: flex;
     flex-direction: row;
@@ -6,3 +6,24 @@
     padding-right: 10%;
     justify-content: space-around;
 }
+.img_Header{
+    background-image: url(../../img/background-dog.jpg);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px;
+    height: 300px;
+    color: #fff;
+    justify-content: center;
+    padding-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+  @media(max-width:980px){
+    .container_Content_Contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
